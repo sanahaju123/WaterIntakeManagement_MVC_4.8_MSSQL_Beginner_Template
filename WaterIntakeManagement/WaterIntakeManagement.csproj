@@ -184,6 +184,11 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202311270254013_initial.cs" />
+    <Compile Include="Migrations\202311270254013_initial.Designer.cs">
+      <DependentUpon>202311270254013_initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\WaterIntake.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -223,11 +228,11 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\FitnessTracker\Index.cshtml" />
-    <Content Include="Views\FitnessTracker\Details.cshtml" />
-    <Content Include="Views\FitnessTracker\Create.cshtml" />
-    <Content Include="Views\FitnessTracker\Edit.cshtml" />
-    <Content Include="Views\FitnessTracker\Delete.cshtml" />
+    <Content Include="Views\WaterIntakeManagement\Create.cshtml" />
+    <Content Include="Views\WaterIntakeManagement\Delete.cshtml" />
+    <Content Include="Views\WaterIntakeManagement\Details.cshtml" />
+    <Content Include="Views\WaterIntakeManagement\Edit.cshtml" />
+    <Content Include="Views\WaterIntakeManagement\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -244,6 +249,11 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202311270254013_initial.resx">
+      <DependentUpon>202311270254013_initial.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
